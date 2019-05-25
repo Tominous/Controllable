@@ -91,7 +91,7 @@ public class Controllable extends DummyModContainer
     @Subscribe
     public void onPreInit(FMLPreInitializationEvent event)
     {
-        //ControllerProperties.load(event.getModConfigurationDirectory());
+        ControllerProperties.load(event.getModConfigurationDirectory());
 
         /* Loads up the controller manager and setup shutdown cleanup */
         Controllable.manager = new ControllerManager();
